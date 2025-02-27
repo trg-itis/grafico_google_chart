@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="js/main.js"></script>
+
+<div class="box-form">
+    <div class="field has-addons">
+        <div class="control is-expanded">
+          <div class="select is-fullwidth">
+            <select name="country" onchange="createGrafico(this)">
+              <option value="retta">Retta ()</option>
+              <option value="parabola">Parabola ()</option>
+              <option value="circonferenza">Circonferenza ()</option>
+            </select>
+          </div>
+        </div>
+        <div class="control">
+          <button type="submit" class="button is-primary">Choose</button>
+        </div>
+      </div>
+      <input
+      class="input is-link"
+      type="number"
+      placeholder="A"
+    />
+    <input
+      class="input is-link"
+      type="number"
+      placeholder="B"
+    />
+    <input
+      class="input is-link"
+      type="number"
+      placeholder="C"
+    />
+
+    <input
+      class="input is-link"
+      type="button"
+      value="Genera il grafico"
+    />
+</div>
+
+<div id="curve_chart"></div>
+</body>
+</html>

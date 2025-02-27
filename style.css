@@ -1,0 +1,22 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+#curve_chart{
+    width: 600px;
+    height: 600px;
+}
+
+.box-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
