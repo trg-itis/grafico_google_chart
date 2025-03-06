@@ -14,29 +14,29 @@
     <div class="field has-addons">
         <div class="control is-expanded">
           <div class="select is-fullwidth">
-            <select name="country" onchange="createGrafico(this)">
+            <select name="country" onchange="selectGraph(this)">
               <option value="retta">Retta ()</option>
               <option value="parabola">Parabola ()</option>
               <option value="circonferenza">Circonferenza ()</option>
             </select>
           </div>
         </div>
-        <div class="control">
-          <button type="submit" class="button is-primary">Choose</button>
-        </div>
       </div>
       <input
       class="input is-link"
       type="number"
+      id="a"
       placeholder="A"
     />
     <input
       class="input is-link"
+      id="b"
       type="number"
       placeholder="B"
     />
     <input
       class="input is-link"
+      id="c"
       type="number"
       placeholder="C"
     />
@@ -45,6 +45,7 @@
       class="input is-link"
       type="button"
       value="Genera il grafico"
+      onclick="createGrafico()"
     />
 </div>
 
